@@ -39,3 +39,15 @@ It has these features.
   * Disable stitching and take dual fish-eye image - `none`
 
 For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images
+
+## To Do
+
+* fix screen size overflow problem on iPhone 7
+
+## Testing on Physical Devices
+
+### iPhone 7
+
+![iphone 7 home screen](doc/iphone_7_home.png)
+
+![app screen](doc/iphone_7_main_app_screen.png)
