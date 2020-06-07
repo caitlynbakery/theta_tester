@@ -2,7 +2,13 @@
 
 ![](doc/theta_screen_android.png)
 
-This is a simple app to test the Z1 functionality. It has these features.
+![](doc/mac_screen.png)
+
+This is a simple app to test the Z1 functionality. 
+
+The app was tested on BOTH android and iOS physical devices. On android it was tested on Google Pixel 2 running android 10. For iOS it was tested on iPhone 7.
+
+It has these features.
 
 ## App Features
 
