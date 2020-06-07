@@ -1,8 +1,8 @@
 # Caitlyn's Ricoh Theta Z1 Tester
+![iphone 7 home screen](doc/iphone_7_home.png)
 
-![](doc/theta_screen_android.png)
+![app screen](doc/iphone_7_main_app_screen.png)
 
-![](doc/mac_screen.png)
 
 This is a simple app to test the Z1 functionality. 
 
@@ -46,8 +46,12 @@ For Normal shooting, performs dynamic stitching, for Interval shooting, saves dy
 
 ## Testing on Physical Devices
 
-### iPhone 7
+### Android Google Pixel 2
 
-![iphone 7 home screen](doc/iphone_7_home.png)
+![Android icon](doc/android_icon.jpeg)
 
-![app screen](doc/iphone_7_main_app_screen.png)
+![Android main](doc/android_main.jpeg)
+
+## Screen Details
+
+![main screen details](doc/theta_screen_android.png)
