@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
 
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xffeb6383),
+          backgroundColor: Color(0xff424874),
           title: Text("Theta Z1 Tester"),
         ),
         body: Center(
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
                     },
                     padding: EdgeInsets.all(20.0),
                     shape: CircleBorder(),
-                      color: Color(0xfffa9191),
+                      color: Color(0xffa6b1e1),
                     child: Icon(Icons.camera_alt, color: Colors.white, size: 30,),
 
                   ),
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                     },
                     padding: EdgeInsets.all(15.0),
                     shape: CircleBorder(),
-                    color: Color(0xfffa9191),
+                    color: Color(0xffa6b1e1),
                     child: Icon(Icons.timer, color: Colors.white, size: 25,),
                   ),
                 ],
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                 onPressed: (){
                   reset();
                 },
-                color: Color(0xfffa9191),
+                color: Color(0xff424874),
                 child: Text("RESET", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
               ),
             ],
