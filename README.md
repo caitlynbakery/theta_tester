@@ -1,16 +1,35 @@
-# caitlyn_tester
+# Caitlyn's Ricoh Theta Z1 Tester
 
-A new Flutter application.
+![](doc/theta_screen_android.png)
 
-## Getting Started
+This is a simple app to test the Z1 functionality. It has these features.
 
-This project is a starting point for a Flutter application.
+## App Features
 
-A few resources to get you started if this is your first Flutter project:
+* Take Picture Button
+* Disable Timer Button
+* Set Timer (3 seconds) Button
+* Disable Sleep Button
+* Set Sleep (every 180 seconds) Button
+* RESET button
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Planned Features
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* New Screen for [_topBottomCorrection](https://api.ricoh/docs/theta-web-api-v2.1/options/_top_bottom_correction/)
+
+  * Enable top/bottom correction for ALL images -  `Apply`
+  * For multiple interval shots, use correction from FIRST shot only - `ApplyAuto`
+  * Performs top/bottom correction & saves parameters - `ApplySave`
+  * Performs top/bottom correction using saved parameters - `ApplyLoad`
+  * Disable top/bottom correction - `Disapply`
+
+* New Screen for [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
+
+  * Automatic stitching - `auto`
+  * Static stitching - `static`
+  * Dynamic stitching - `dynamicAuto`
+  * Dynamic stitching and save - `dynamicSave`
+  * Dynamic Stitching and load - `dyanmicLoad`
+  * Disable stitching and take dual fish-eye image - `none`
+
+For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images
