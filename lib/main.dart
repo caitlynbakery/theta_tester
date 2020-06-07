@@ -1,6 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 import 'commands/take_pic.dart';
 import 'commands/reset.dart';
+import 'commands/timer.dart';
+import 'commands/timer_off.dart';
+import 'commands/sleepOff.dart';
+import 'commands/sleep.dart';
+import 'components/camera_tool.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,29 +31,31 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 90,
               ),
+              MaterialButton(
+                onPressed: (){
+                  takePicture();
+                },
+                padding: EdgeInsets.all(25.0),
+                shape: CircleBorder(),
+                color: Color(0xffa6b1e1),
+                child: Icon(Icons.camera_alt, color: Colors.white, size: 35,),
+
+              ),
+              SizedBox(
+                height: 50,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  MaterialButton(
-                    onPressed: (){
-                      takePicture();
-                    },
-                    padding: EdgeInsets.all(20.0),
-                    shape: CircleBorder(),
-                      color: Color(0xffa6b1e1),
-                    child: Icon(Icons.camera_alt, color: Colors.white, size: 30,),
 
-                  ),
-                  MaterialButton(
-                    onPressed: (){
-                    },
-                    padding: EdgeInsets.all(15.0),
-                    shape: CircleBorder(),
-                    color: Color(0xffa6b1e1),
-                    child: Icon(Icons.timer, color: Colors.white, size: 25,),
-                  ),
+                  CameraTool(cameraFunction: timerOff, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_off, color: Colors.white, size: 25,),),
+                  CameraTool(cameraFunction: timerThree, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_3, color: Colors.white, size: 25,),),
+                 CameraTool(cameraFunction: sleepOff, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Awake', style: TextStyle(color: Colors.white, fontSize: 15),),),
+                  CameraTool(cameraFunction: sleep, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Sleep', style: TextStyle(color: Colors.white, fontSize: 15),),),
+
                 ],
               ),
+
 
               SizedBox(
                 height: 100,
@@ -56,7 +65,7 @@ class MyApp extends StatelessWidget {
               ),
               FlatButton(
                 onPressed: (){
-                  reset();
+                   reset();
                 },
                 color: Color(0xff424874),
                 child: Text("RESET", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
@@ -68,5 +77,8 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
 
 
