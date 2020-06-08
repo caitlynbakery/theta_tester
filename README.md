@@ -20,21 +20,25 @@ It has these features.
 * RESET button
 * Automatic stitching - `auto`
 * Disable stitching and take dual fish-eye image - `none`
-* New Screen for [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
 
+## Image Stitching
+
+
+![stitched photo](doc/stitched_photo.png)
+This is a photo of a dual fish-eye image. I disabled the stitching with a button and took the photo. 
 
   * Static stitching - `static`
   * Dynamic stitching - `dynamicAuto`
   * Dynamic stitching and save - `dynamicSave`
   * Dynamic Stitching and load - `dyanmicLoad`
 
-![stitched photo](doc/stitched_photo.png)
-This is a photo of a dual fish-eye image. I disabled the stitching with a button and took the photo. 
+  API:  [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
 
 
-## Planned Features
+## Orientation and Top/Bottom Correction
 
-* New Screen for [_topBottomCorrection](https://api.ricoh/docs/theta-web-api-v2.1/options/_top_bottom_correction/)
+
+![orientation](doc/orientation.png)
 
   * Enable top/bottom correction for ALL images -  `Apply`
   * For multiple interval shots, use correction from FIRST shot only - `ApplyAuto`
@@ -45,6 +49,9 @@ This is a photo of a dual fish-eye image. I disabled the stitching with a button
 
 
 For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images
+
+
+API [_topBottomCorrection](https://api.ricoh/docs/theta-web-api-v2.1/options/_top_bottom_correction/)
 
 ## To Do
 
@@ -62,5 +69,12 @@ For Normal shooting, performs dynamic stitching, for Interval shooting, saves dy
 
 ![main screen details](doc/theta_screen_android.png)
 
-![stitching button](doc/stitching_screen.png)
 This is my temporary view of the stitching screen. 
+
+
+![stitching button](doc/stitching_screen.png)
+
+
+Temporary orientation screen.
+
+![orientation button](doc/orientation-screen.png)

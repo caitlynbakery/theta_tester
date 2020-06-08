@@ -21,7 +21,7 @@ Future<http.Response> stitchingStatic() async {
       headers: {"Content-Type": "application/json;charset=utf-8"},
       body: body
   );
-  print('set stitching');
+  print('set stitching static');
 
   return response;
 }

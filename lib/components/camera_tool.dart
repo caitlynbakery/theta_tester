@@ -9,7 +9,7 @@ class CameraTool extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
+    return OutlineButton(
       onPressed: () {
         cameraFunction();
       },

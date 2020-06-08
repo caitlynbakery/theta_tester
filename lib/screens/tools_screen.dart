@@ -24,29 +24,29 @@ class ToolsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            SizedBox(
-              height: 60,
-            ),
-            MaterialButton(
-              onPressed: (){
-                takePicture();
-              },
-              padding: EdgeInsets.all(25.0),
-              shape: CircleBorder(),
-              color: Color(0xffa6b1e1),
-              child: Icon(Icons.camera_alt, color: Colors.white, size: 35,),
+            Padding(
+              padding: const EdgeInsets.only(top: 35.0),
+              child: MaterialButton(
+                onPressed: (){
+                  takePicture();
+                },
+                padding: EdgeInsets.all(25.0),
+                shape: CircleBorder(),
+                color: Color(0xffa6b1e1),
+                child: Icon(Icons.camera_alt, color: Colors.white, size: 35,),
 
+              ),
             ),
             SizedBox(
-              height: 50,
+              height: 40,
             ),
             Flexible(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
 
-                  CameraTool(cameraFunction: timerOff, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_off, color: Colors.white, size: 25,),),
-                  CameraTool(cameraFunction: timerThree, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_3, color: Colors.white, size: 25,),),
+                  CameraTool(cameraFunction: timerOff, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_off, color: Color(0xffa6b1e1), size: 25,),),
+                  CameraTool(cameraFunction: timerThree, cameraPadding: EdgeInsets.all(15.0), cameraWidget: Icon(Icons.timer_3, color: Color(0xffa6b1e1), size: 25,),),
 
 
                 ],
@@ -58,8 +58,8 @@ class ToolsScreen extends StatelessWidget {
 
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CameraTool(cameraFunction: sleepOff, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Awake', style: TextStyle(color: Colors.white, fontSize: 15),),),
-                CameraTool(cameraFunction: sleep, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Sleep', style: TextStyle(color: Colors.white, fontSize: 15),),),
+                CameraTool(cameraFunction: sleepOff, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Awake', style: TextStyle(color: Color(0xffa6b1e1), fontSize: 15),),),
+                CameraTool(cameraFunction: sleep, cameraPadding: EdgeInsets.all(20.0), cameraWidget: Text('Sleep', style: TextStyle(color: Color(0xffa6b1e1), fontSize: 15),),),
               ],
             ),
             SizedBox(
@@ -68,17 +68,23 @@ class ToolsScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                FlatButton(
-                  onPressed: (){
-                    Navigator.pushNamed(context, "/stitching");
-                  },
-                  child: Text("STITCHING"),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: OutlineButton(
+                    onPressed: (){
+                      Navigator.pushNamed(context, "/stitching");
+                    },
+                    child: Text("STITCHING"),
+                  ),
                 ),
-                FlatButton(
-                  onPressed: (){
-                    Navigator.pushNamed(context, "/orientation");
-                  },
-                  child: Text("ORIENTATION"),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: OutlineButton(
+                    onPressed: (){
+                      Navigator.pushNamed(context, "/orientation");
+                    },
+                    child: Text("ORIENTATION"),
+                  ),
                 ),
               ],
             ),
