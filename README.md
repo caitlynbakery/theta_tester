@@ -20,6 +20,17 @@ It has these features.
 * RESET button
 * Automatic stitching - `auto`
 * Disable stitching and take dual fish-eye image - `none`
+* New Screen for [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
+
+
+  * Static stitching - `static`
+  * Dynamic stitching - `dynamicAuto`
+  * Dynamic stitching and save - `dynamicSave`
+  * Dynamic Stitching and load - `dyanmicLoad`
+
+![stitched photo](doc/stitched_photo.png)
+This is a photo of a dual fish-eye image. I disabled the stitching with a button and took the photo. 
+
 
 ## Planned Features
 
@@ -31,13 +42,6 @@ It has these features.
   * Performs top/bottom correction using saved parameters - `ApplyLoad`
   * Disable top/bottom correction - `Disapply`
 
-* New Screen for [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
-
-
-  * Static stitching - `static`
-  * Dynamic stitching - `dynamicAuto`
-  * Dynamic stitching and save - `dynamicSave`
-  * Dynamic Stitching and load - `dyanmicLoad`
 
 
 For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images
@@ -57,3 +61,6 @@ For Normal shooting, performs dynamic stitching, for Interval shooting, saves dy
 ## Screen Details
 
 ![main screen details](doc/theta_screen_android.png)
+
+![stitching button](doc/stitching_screen.png)
+This is my temporary view of the stitching screen. 
