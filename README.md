@@ -18,6 +18,8 @@ It has these features.
 * Disable Sleep Button
 * Set Sleep (every 180 seconds) Button
 * RESET button
+* Automatic stitching - `auto`
+* Disable stitching and take dual fish-eye image - `none`
 
 ## Planned Features
 
@@ -31,12 +33,12 @@ It has these features.
 
 * New Screen for [_imageStitching](https://api.ricoh/docs/theta-web-api-v2.1/options/_image_stitching/)
 
-  * Automatic stitching - `auto`
+
   * Static stitching - `static`
   * Dynamic stitching - `dynamicAuto`
   * Dynamic stitching and save - `dynamicSave`
   * Dynamic Stitching and load - `dyanmicLoad`
-  * Disable stitching and take dual fish-eye image - `none`
+
 
 For Normal shooting, performs dynamic stitching, for Interval shooting, saves dynamic distortion correction parameters for the first image and then uses them for the 2nd and subsequent images
 
