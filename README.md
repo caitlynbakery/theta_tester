@@ -53,10 +53,6 @@ For Normal shooting, performs dynamic stitching, for Interval shooting, saves dy
 
 API [_topBottomCorrection](https://api.ricoh/docs/theta-web-api-v2.1/options/_top_bottom_correction/)
 
-## To Do
-
-* fix screen size overflow problem on iPhone 7
-
 ## Testing on Physical Devices
 
 ### Android Google Pixel 2
@@ -78,3 +74,10 @@ This is my temporary view of the stitching screen.
 Temporary orientation screen.
 
 ![orientation button](doc/orientation-screen.png)
+
+
+## To Do
+
+* improve buttons and UI interface
+* make reset screen
+* view image on mobile phone
