@@ -1,4 +1,5 @@
 import 'package:caitlyn_tester/screens/stitching_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:caitlyn_tester/commands/reset.dart';
 import 'package:caitlyn_tester/commands/sleep.dart';
@@ -8,6 +9,7 @@ import 'package:caitlyn_tester/commands/timer.dart';
 import 'package:caitlyn_tester/commands/timer_off.dart';
 import 'package:caitlyn_tester/components/camera_tool.dart';
 
+import 'package:caitlyn_tester/screens/image_view.dart';
 class ToolsScreen extends StatelessWidget {
   const ToolsScreen({
     Key key,
@@ -24,18 +26,33 @@ class ToolsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(top: 35.0),
-              child: MaterialButton(
-                onPressed: (){
-                  takePicture();
-                },
-                padding: EdgeInsets.all(25.0),
-                shape: CircleBorder(),
-                color: Color(0xffa6b1e1),
-                child: Icon(Icons.camera_alt, color: Colors.white, size: 35,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.only(top: 35.0),
+                  child: MaterialButton(
+                    onPressed: (){
+                        Navigator.pushNamed(context, '/imageview');
+                    },
+                    child: Icon(Icons.image, color: Color(0xff424874), size: 20,),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 35.0),
+                  child: MaterialButton(
+                    onPressed: (){
+                      takePicture();
+                    },
+                    padding: EdgeInsets.all(25.0),
+                    shape: CircleBorder(),
+                    color: Color(0xffa6b1e1),
+                    child: Icon(Icons.camera_alt, color: Colors.white, size: 35,),
 
-              ),
+                  ),
+                ),
+
+              ],
             ),
             SizedBox(
               height: 40,
