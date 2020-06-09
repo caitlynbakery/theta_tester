@@ -26,20 +26,21 @@ class ToolsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.only(top: 35.0),
-                  child: MaterialButton(
+                  padding: const EdgeInsets.only(top: 35.0, right: 20.0),
+                  child: IconButton(
                     onPressed: (){
                         Navigator.pushNamed(context, '/imageview');
                     },
-                    child: Icon(Icons.image, color: Color(0xff424874), size: 20,),
+                    icon: Icon(Icons.image, color: Color(0xff424874), size: 40,),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 35.0),
+                  padding: const EdgeInsets.only(top: 35.0, left: 20.0),
                   child: MaterialButton(
                     onPressed: (){
                       takePicture();
@@ -92,6 +93,14 @@ class ToolsScreen extends StatelessWidget {
                       Navigator.pushNamed(context, "/stitching");
                     },
                     child: Text("STITCHING"),
+
+                    borderSide: BorderSide(
+                      color: Color(0xff424874),
+                      style: BorderStyle.solid,
+                      width: 2.0,
+                    ),
+                    highlightedBorderColor: Color(0xffdcd6f7),
+                    splashColor: Color(0xffdcd6f7),
                   ),
                 ),
                 Padding(
@@ -101,6 +110,13 @@ class ToolsScreen extends StatelessWidget {
                       Navigator.pushNamed(context, "/orientation");
                     },
                     child: Text("ORIENTATION"),
+                    borderSide: BorderSide(
+                        color: Color(0xff424874),
+                      style: BorderStyle.solid,
+                      width: 2.0,
+                    ),
+                    highlightedBorderColor: Color(0xffdcd6f7),
+                    splashColor: Color(0xffdcd6f7),
                   ),
                 ),
               ],

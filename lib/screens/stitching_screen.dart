@@ -11,29 +11,52 @@ class StitchingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stitching'),
+        title: Text('Stitching', style: TextStyle(color: Color(0xff424874)),),
+        backgroundColor: Color(0xffa6b1e1),
       ),
       body: Column(
+
         children: <Widget>[
+          SizedBox(
+            height: 100.0,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Button(buttonTitle: "Auto", buttonFunction: stitchingAuto,),
-              Button(buttonTitle: "Static", buttonFunction: stitchingStatic,),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "Auto", buttonFunction: stitchingAuto,),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "Static", buttonFunction: stitchingStatic,),
+              ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Button(buttonTitle: "dynamicAuto", buttonFunction: stitchingDynamicAuto,),
-              Button(buttonTitle: "dynamicSave", buttonFunction: stitchingDynamicSave,),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "dynamicAuto", buttonFunction: stitchingDynamicAuto,),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "dynamicSave", buttonFunction: stitchingDynamicSave,),
+              ),
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Button(buttonTitle: "dynamicLoad", buttonFunction: stitchingDynamicLoad,),
-              Button(buttonTitle: "none", buttonFunction: stitchingNone,),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "dynamicLoad", buttonFunction: stitchingDynamicLoad,),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Button(buttonTitle: "none", buttonFunction: stitchingNone,),
+              ),
             ],
           )
         ],
@@ -50,10 +73,12 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      child: Text(buttonTitle),
+      child: Text(buttonTitle, style: TextStyle(color: Color(0xff424874), fontSize: 18.0),),
       onPressed: (){
         buttonFunction();
-      }
+      },
+      color: Color(0xffdcd6f7),
+      elevation: 3.0,
     );
   }
 }

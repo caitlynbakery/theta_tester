@@ -11,7 +11,7 @@ class _ImageViewScreenState extends State<ImageViewScreen> {
 
   void getPicture() async {
      String tempUrl = await getLastImageUrl();
-     print(tempUrl);
+
      setState(() {
        url = tempUrl;
      });

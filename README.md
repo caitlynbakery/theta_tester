@@ -53,6 +53,13 @@ For Normal shooting, performs dynamic stitching, for Interval shooting, saves dy
 
 API [_topBottomCorrection](https://api.ricoh/docs/theta-web-api-v2.1/options/_top_bottom_correction/)
 
+## Image View Screen
+
+![](doc/image_view.png)
+
+I made a separate screen to view the latest image that was taken on my app.
+
+
 ## Testing on Physical Devices
 
 ### Android Google Pixel 2
