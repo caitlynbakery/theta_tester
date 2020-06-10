@@ -66,7 +66,7 @@ I made a separate screen to view the latest image that was taken on my app.
 
 ![Android icon](doc/android_icon.jpeg)
 
-![Android main](doc/android_main.jpeg)
+![Android main](doc/android_main.png)
 
 ## Screen Details
 
@@ -85,6 +85,4 @@ Orientation screen.
 
 ## To Do
 
-* improve buttons and UI interface
 * make reset screen
-* view image on mobile phone
