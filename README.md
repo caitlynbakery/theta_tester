@@ -85,4 +85,9 @@ Orientation screen.
 
 ## To Do
 
+* Image View Screen
+  * change color for image view screen
+  * build loading screen while image loads
 * make reset screen
+* improve image GPS accuracy. [API to insert GPS](https://api.ricoh/docs/theta-web-api-v2.1/options/gps_info/) information from mobile phone.
+* [microphone gain](https://api.ricoh/docs/theta-web-api-v2.1/options/_gain/)

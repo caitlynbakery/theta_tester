@@ -23,8 +23,12 @@ class _ImageViewScreenState extends State<ImageViewScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "View Image"
+          "View Image",
+          style: TextStyle(
+            color: Color(0xff424874)
+          ),
         ),
+        backgroundColor: Color(0xffa6b1e1),
       ),
       body: Column(
         children: <Widget>[

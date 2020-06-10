@@ -37,6 +37,7 @@ class ToolsScreen extends StatelessWidget {
                         Navigator.pushNamed(context, '/imageview');
                     },
                     icon: Icon(Icons.image, color: Color(0xff424874), size: 40,),
+                    splashColor: Color(0xffa6b1e1),
                   ),
                 ),
                 Padding(
