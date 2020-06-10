@@ -72,13 +72,13 @@ I made a separate screen to view the latest image that was taken on my app.
 
 ![main screen details](doc/theta_screen_android.png)
 
-This is my temporary view of the stitching screen. 
+Stitching screen. 
 
 
 ![stitching button](doc/stitching_screen.png)
 
 
-Temporary orientation screen.
+Orientation screen.
 
 ![orientation button](doc/orientation-screen.png)
 
