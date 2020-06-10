@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:caitlyn_tester/commands/last_file_url.dart';
+import 'package:caitlyn_tester/screens/image_loading_screen.dart';
 
 class ImageViewScreen extends StatefulWidget {
+//  ImageViewScreen({this.imageURL});
+//
+//  final imageURL;
+
   @override
   _ImageViewScreenState createState() => _ImageViewScreenState();
 }
@@ -35,9 +40,10 @@ class _ImageViewScreenState extends State<ImageViewScreen> {
           SizedBox(
             height: 30,
           ),
-//          Image.network("https://i.picsum.photos/id/251/500/250.jpg"),
+       //Image.network("https://i.picsum.photos/id/251/500/250.jpg"),
         Text("Image loading may take a moment"),
-        Image.network(url),
+       // Image.network(widget.imageURL),
+          Image.network(url)
         ],
       ),
     );

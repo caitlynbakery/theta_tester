@@ -34,7 +34,8 @@ class ToolsScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 35.0, right: 20.0),
                   child: IconButton(
                     onPressed: (){
-                        Navigator.pushNamed(context, '/imageview');
+                    // Navigator.pushNamed(context, '/imageloading');
+                      Navigator.pushNamed(context, '/imageview');
                     },
                     icon: Icon(Icons.image, color: Color(0xff424874), size: 40,),
                     splashColor: Color(0xffa6b1e1),

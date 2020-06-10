@@ -5,6 +5,7 @@ import 'screens/tools_screen.dart';
 import 'screens/stitching_screen.dart';
 import 'screens/orientation_screen.dart';
 import 'screens/image_view.dart';
+import 'screens/image_loading_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
         "/stitching": (context) => StitchingScreen(),
         "/orientation": (context) => OrientationScreen(),
         "/imageview": (context) => ImageViewScreen(),
+//        "/imageloading": (context) => LoadingScreen(),
       },
       initialRoute: "/",
     );
